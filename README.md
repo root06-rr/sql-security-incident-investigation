@@ -22,6 +22,26 @@ This is a hands-on SQL investigation project using simulated records. It is not 
 | Endpoint and asset audit | Which employee records match the filters, and which users or assets lack a matching assignment? | employees, users, assets |
 
 
+## Run the project
+
+The setup SQL uses MySQL-style database commands. You can run it in a MySQL-compatible client, or use the Python runner to execute the setup and investigation files with SQLite.
+
+### Run with Python and SQLite
+
+Python 3 is required. The runner uses only the Python standard library, so no packages need to be installed.
+
+```bash
+python run_audit.py
+```
+
+The runner reads `database/setup_database.sql`, skips the MySQL-only `CREATE DATABASE` and `USE` statements, creates an in-memory SQLite database, and runs each `investigations/*/investigation.sql` file in sorted order. It prints query results in the terminal and writes `reports/audit_findings_report.md`.
+
+This is a SQLite execution path, not a MySQL server test. SQL syntax or functions that differ between MySQL and SQLite may need a compatible form before the runner can execute them. If a statement is not supported, the runner displays the error and stops. The generated report contains results returned by the local SQLite run.
+
+### Run directly in MySQL
+
+You can also execute the setup script and investigation SQL files in a MySQL-compatible SQL client.
+
 ## Investigation guides
 
 - [01. Authentication review](investigations/01-authentication-review/README.md)
