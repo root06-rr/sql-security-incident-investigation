@@ -16,8 +16,6 @@ The page covers these nine sections in order:
 8. String functions and aggregate functions.
 9. SQL joins, primary and foreign keys, the ON clause, INNER JOIN, outer joins, and NULL values.
 
-I also included selected original screenshots in [learning notes](learning-notes/README.md). The screenshots illustrate learning examples. They are not investigation output.
-
 ## Practical project source
 
 The four investigation areas, sample schema, and sample records come from the supplied SQL security project archive. The repository keeps the learning reference separate from the practical investigation queries.
