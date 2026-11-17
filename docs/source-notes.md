@@ -16,7 +16,7 @@ The page covers these nine sections in order:
 8. String functions and aggregate functions.
 9. SQL joins, primary and foreign keys, the ON clause, INNER JOIN, outer joins, and NULL values.
 
-I organized the concepts and terms from these sections into the [SQL reference](sql-reference.md). I also included selected original screenshots in [learning notes](learning-notes/README.md). The screenshots illustrate learning examples. They are not investigation output.
+I also included selected original screenshots in [learning notes](learning-notes/README.md). The screenshots illustrate learning examples. They are not investigation output.
 
 ## Practical project source
 
