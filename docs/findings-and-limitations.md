@@ -32,7 +32,3 @@ The employee rows include East office entries, an IT Staff department entry, and
 - The sample does not include enough repeated failed-login rows to demonstrate the greater-than-one aggregation threshold.
 - The IP examples are documentation addresses, not threat intelligence.
 - No conclusion about compromise, malicious intent, or real-world risk can be drawn from these records.
-
-## Possible next improvements
-
-A future version could add a larger and clearly documented test dataset, define relationships between identity and asset records, and add repeatable query validation. Those changes would be separate additions, not part of the original Notion material.
