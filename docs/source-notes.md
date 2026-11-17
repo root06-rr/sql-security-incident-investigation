@@ -1,10 +1,10 @@
 # Source notes
 
-## Main Notion source
+## Learning source
 
-I used my Notion page [19) SQL](https://app.notion.com/p/19-SQL-301f055fceba8052a846cdbf4c8fce16?source=copy_link) as the learning reference for this project.
+I used my Notion page [19) SQL](https://app.notion.com/p/19-SQL-301f055fceba8052a846cdbf4c8fce16?source=copy_link) as the learning reference for this project. The notes and screenshots on that page came from my study of the Google Cybersecurity Certificate on Coursera and TryHackMe labs.
 
-The page covers these topics in this order:
+The page covers these nine sections in order:
 
 1. Database fundamentals, relational keys, SQL, SQL compared with Linux filtering, and syntax rules.
 2. Database statements.
@@ -16,14 +16,14 @@ The page covers these topics in this order:
 8. String functions and aggregate functions.
 9. SQL joins, primary and foreign keys, the ON clause, INNER JOIN, outer joins, and NULL values.
 
-I organized those topics into [SQL reference from my Notion notes](sql-reference.md). The reference explains the concepts used across the project and keeps the original topic order.
+I organized the concepts and terms from these sections into the [SQL reference](sql-reference.md). I also included selected original screenshots in [learning notes](learning-notes/README.md). The screenshots illustrate learning examples. They are not investigation output.
 
-## Project source files
+## Practical project source
 
-The four investigation areas and sample records come from the supplied SQL security project archive. The repository keeps the original learning concepts separate from the investigation queries.
+The four investigation areas, sample schema, and sample records come from the supplied SQL security project archive. The repository keeps the learning reference separate from the practical investigation queries.
 
-## How I use the source
+## How I use the sources
 
-The Notion page is the source for the SQL learning topics. The supplied SQL project archive is the source for the sample schema, sample records, and four investigation exercises. Explanations of query output in this repository are based on those supplied sample records.
+The Notion page is the source for the SQL learning topics and screenshots. The supplied SQL project archive is the source for the sample schema, records, and four investigation exercises. Explanations of query output are based on those supplied sample records.
 
-I have not added live security events, real threat intelligence, or claims about a real incident. Any future additions that use a different dataset or new investigation logic should be identified as separate work.
+I have not added live security events, real threat intelligence, or claims about a real incident. The screenshots are not presented as proof of execution. Any future additions that use a different dataset or new investigation logic should be identified as separate work.
