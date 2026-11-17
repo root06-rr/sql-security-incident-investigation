@@ -1,6 +1,5 @@
 -- SQL-Based Security Access and Asset Audit
 -- Sample schema and records from the supplied Notion SQL exercise.
--- Run in a MySQL-compatible client. All records are simulated learning data.
 
 CREATE DATABASE IF NOT EXISTS sql_security_audit;
 USE sql_security_audit;
