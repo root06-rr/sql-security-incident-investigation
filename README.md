@@ -1,6 +1,6 @@
 # SQL-Based Security Access and Asset Audit
 
-I built this project to practise reviewing authentication activity and auditing employee and hardware records with SQL. I used the SQL examples and sample records from my Notion notes as the starting point, then organized the queries into four investigation areas.
+I built this project to practise reviewing authentication activity and auditing employee and hardware records with SQL. My learning reference is my Notion page, which I developed from material I studied through the Google Cybersecurity Certificate on Coursera and TryHackMe labs. The practical database and four investigation exercises come from the supplied SQL project archive.
 
 This is a hands-on SQL investigation project using simulated records. It is not connected to a live environment and does not represent a real security incident.
 
@@ -34,6 +34,9 @@ This is a hands-on SQL investigation project using simulated records. It is not 
 │   ├── 03-ip-and-location-review/
 │   └── 04-endpoint-and-asset-audit/
 └── docs/
+    ├── learning-notes/
+    │   ├── README.md
+    │   └── screenshots/
     ├── project-overview.md
     ├── investigation-methodology.md
     ├── database-schema.md
@@ -68,7 +71,8 @@ The setup script creates the `sql_security_audit` database and inserts the sampl
 - [Database schema](docs/database-schema.md)
 - [Findings and limitations](docs/findings-and-limitations.md)
 - [Source notes](docs/source-notes.md)
-- [SQL reference from my Notion notes](docs/sql-reference.md)
+- [Complete SQL reference from my Notion notes](docs/sql-reference.md)
+- [Learning notes and selected screenshots](docs/learning-notes/README.md)
 
 ## Important limitations
 
@@ -76,6 +80,8 @@ The sample data is small and simulated. The IP addresses 198.51.100.42 and 203.0
 
 The original schema includes a machines table, but the supplied sample does not populate it and the supplied investigations do not use it. The authentication records are also not relationally linked to the separate users or employees tables.
 
+The SQL reference documents the learning material. It is not a claim that every concept is used by the four investigation scripts.
+
 ## Skills demonstrated
 
-SQL filtering, comparison and logical operators, LIKE, BETWEEN, aggregation, GROUP BY, HAVING, sorting, INNER JOIN, LEFT JOIN, RIGHT JOIN, NULL handling, schema setup, and technical documentation.
+SQL filtering, comparison and logical operators, LIKE, BETWEEN, aggregation, GROUP BY, HAVING, sorting, string functions, INNER JOIN, LEFT JOIN, RIGHT JOIN, NULL handling, schema setup, and technical documentation.
