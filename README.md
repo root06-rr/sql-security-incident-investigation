@@ -35,9 +35,7 @@ This is a hands-on SQL investigation project using simulated records. It is not 
 - [Database schema](docs/database-schema.md)
 - [Findings and limitations](docs/findings-and-limitations.md)
 - [Source notes](docs/source-notes.md)
-- [Complete SQL reference from my Notion notes](docs/sql-reference.md)
-- [Learning notes and selected screenshots](docs/learning-notes/README.md)
-
+  
 ## Important limitations
 
 The sample data is small and simulated. The IP addresses 198.51.100.42 and 203.0.113.15 belong to documentation ranges reserved for examples. They are not real threat indicators. A failed login or after-hours login is not proof of compromise or unauthorized access.
