@@ -1,35 +1,29 @@
-# Source notes and evidence guide
+# Source notes
 
-## Source of truth
+## Main Notion source
 
-This project is based on my Notion page **19) SQL** exported as the file supplied with this project. The notes cover database fundamentals, relational tables, SQL statements, CRUD operations, SELECT and WHERE, comparison and logical operators, LIKE, BETWEEN, data types, string functions, aggregate functions, joins, NULL handling, and SQL filtering.
+I used my Notion page [19) SQL](https://app.notion.com/p/19-SQL-301f055fceba8052a846cdbf4c8fce16?source=copy_link) as the learning reference for this project.
 
-The four investigation scripts are based on the supplied SQL project ZIP. The database setup and sample records are retained as the basis for the investigation queries.
+The page covers these topics in this order:
 
-## Screenshot evidence
+1. Database fundamentals, relational keys, SQL, SQL compared with Linux filtering, and syntax rules.
+2. Database statements.
+3. Table statements.
+4. CRUD operations.
+5. Clauses including DISTINCT, GROUP BY, HAVING, ORDER BY, and WHERE.
+6. LIKE and wildcard patterns.
+7. SQL data types, comparison operators, BETWEEN, AND, OR, and NOT.
+8. String functions and aggregate functions.
+9. SQL joins, primary and foreign keys, the ON clause, INNER JOIN, outer joins, and NULL values.
 
-The exported Notion page contains screenshots of SQL practice. Those images demonstrate the learning process and SQL concepts from the notes. They are not output screenshots from the four security investigation queries.
+I organized those topics into [SQL reference from my Notion notes](sql-reference.md). The reference explains the concepts used across the project and keeps the original topic order.
 
-The repository separates two evidence types:
+## Project source files
 
-- `evidence/sql-learning-reference/` is for screenshots from the Notion SQL learning page.
-- `evidence/investigation/` is reserved for screenshots captured by running this project's investigation queries.
+The four investigation areas and sample records come from the supplied SQL security project archive. The repository keeps the original learning concepts separate from the investigation queries.
 
-No investigation-result screenshots are claimed until the queries have actually been run and the output has been captured.
+## How I use the source
 
-## Concepts from the Notion notes
+The Notion page is the source for the SQL learning topics. The supplied SQL project archive is the source for the sample schema, sample records, and four investigation exercises. Explanations of query output in this repository are based on those supplied sample records.
 
-- Database and relational table fundamentals
-- SQL statements and table operations
-- CRUD operations
-- SELECT and WHERE
-- Comparison and logical operators
-- LIKE and BETWEEN
-- Data types
-- CONCAT, GROUP_CONCAT, SUBSTRING, and LENGTH
-- COUNT, SUM, MAX, and MIN
-- INNER, LEFT, and RIGHT joins
-- NULL handling
-- SQL filtering compared with Linux filtering
-
-The learning screenshots are reference material rather than proof of a security event.
+I have not added live security events, real threat intelligence, or claims about a real incident. Any future additions that use a different dataset or new investigation logic should be identified as separate work.
