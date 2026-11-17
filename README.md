@@ -21,30 +21,6 @@ This is a hands-on SQL investigation project using simulated records. It is not 
 | IP and location review | Which records match the country and IP patterns in the exercise? | log_in_attempts |
 | Endpoint and asset audit | Which employee records match the filters, and which users or assets lack a matching assignment? | employees, users, assets |
 
-## Repository structure
-
-```text
-.
-├── README.md
-├── database/
-│   └── setup_database.sql
-├── investigations/
-│   ├── 01-authentication-review/
-│   ├── 02-after-hours-access/
-│   ├── 03-ip-and-location-review/
-│   └── 04-endpoint-and-asset-audit/
-└── docs/
-    ├── learning-notes/
-    │   ├── README.md
-    │   └── screenshots/
-    ├── project-overview.md
-    ├── investigation-methodology.md
-    ├── database-schema.md
-    ├── findings-and-limitations.md
-    ├── source-notes.md
-    └── sql-reference.md
-```
-
 ## Investigation guides
 
 - [01. Authentication review](investigations/01-authentication-review/README.md)
