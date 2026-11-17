@@ -33,15 +33,13 @@ This is a hands-on SQL investigation project using simulated records. It is not 
 │   ├── 02-after-hours-access/
 │   ├── 03-ip-and-location-review/
 │   └── 04-endpoint-and-asset-audit/
-├── docs/
-│   ├── project-overview.md
-│   ├── investigation-methodology.md
-│   ├── database-schema.md
-│   ├── findings-and-limitations.md
-│   └── source-notes.md
-└── evidence/
-    ├── investigation/
-    └── sql-learning-reference/
+└── docs/
+    ├── project-overview.md
+    ├── investigation-methodology.md
+    ├── database-schema.md
+    ├── findings-and-limitations.md
+    ├── source-notes.md
+    └── sql-reference.md
 ```
 
 ## Run the project
@@ -54,7 +52,7 @@ The scripts use MySQL-compatible SQL.
 4. Run the investigation SQL files in order.
 5. Review the matching investigation README for context and interpretation.
 
-The setup script creates the `sql_security_audit` database and inserts the sample rows. Re-running the inserts without clearing the tables will cause duplicate primary key errors. For a fresh run, remove the existing sample tables first or use a clean database.
+The setup script creates the `sql_security_audit` database and inserts the sample rows. It is intended for a fresh database. If you run it again after the sample rows have already been inserted, the primary key values will already exist and the inserts will fail. Use a fresh copy of the database before running the setup script again.
 
 ## Investigation guides
 
@@ -69,17 +67,14 @@ The setup script creates the `sql_security_audit` database and inserts the sampl
 - [Investigation methodology](docs/investigation-methodology.md)
 - [Database schema](docs/database-schema.md)
 - [Findings and limitations](docs/findings-and-limitations.md)
-- [Source notes and evidence guide](docs/source-notes.md)
-
-## Evidence
-
-The Notion export contains SQL learning screenshots. Those images document SQL practice and concepts. They are not screenshots of the four investigation outputs. Investigation screenshots should be added to `evidence/investigation/` only after running the queries and capturing their actual results.
+- [Source notes](docs/source-notes.md)
+- [SQL reference from my Notion notes](docs/sql-reference.md)
 
 ## Important limitations
 
 The sample data is small and simulated. The IP addresses 198.51.100.42 and 203.0.113.15 belong to documentation ranges reserved for examples. They are not real threat indicators. A failed login or after-hours login is not proof of compromise or unauthorized access.
 
-The original schema includes a machines table, but the supplied sample does not populate it and the supplied queries do not use it. The authentication records are also not relationally linked to the separate users or employees tables.
+The original schema includes a machines table, but the supplied sample does not populate it and the supplied investigations do not use it. The authentication records are also not relationally linked to the separate users or employees tables.
 
 ## Skills demonstrated
 
