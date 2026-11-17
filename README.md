@@ -21,26 +21,29 @@ This is a hands-on SQL investigation project using simulated records. It is not 
 | IP and location review | Which records match the country and IP patterns in the exercise? | log_in_attempts |
 | Endpoint and asset audit | Which employee records match the filters, and which users or assets lack a matching assignment? | employees, users, assets |
 
+## Repository structure
 
-## Run the project
-
-The setup SQL uses MySQL-style database commands. You can run it in a MySQL-compatible client, or use the Python runner to execute the setup and investigation files with SQLite.
-
-### Run with Python and SQLite
-
-Python 3 is required. The runner uses only the Python standard library, so no packages need to be installed.
-
-```bash
-python run_audit.py
+```text
+.
+├── README.md
+├── database/
+│   └── setup_database.sql
+├── investigations/
+│   ├── 01-authentication-review/
+│   ├── 02-after-hours-access/
+│   ├── 03-ip-and-location-review/
+│   └── 04-endpoint-and-asset-audit/
+└── docs/
+    ├── learning-notes/
+    │   ├── README.md
+    │   └── screenshots/
+    ├── project-overview.md
+    ├── investigation-methodology.md
+    ├── database-schema.md
+    ├── findings-and-limitations.md
+    ├── source-notes.md
+    └── sql-reference.md
 ```
-
-The runner reads `database/setup_database.sql`, skips the MySQL-only `CREATE DATABASE` and `USE` statements, creates an in-memory SQLite database, and runs each `investigations/*/investigation.sql` file in sorted order. It prints query results in the terminal and writes `reports/audit_findings_report.md`.
-
-This is a SQLite execution path, not a MySQL server test. SQL syntax or functions that differ between MySQL and SQLite may need a compatible form before the runner can execute them. If a statement is not supported, the runner displays the error and stops. The generated report contains results returned by the local SQLite run.
-
-### Run directly in MySQL
-
-You can also execute the setup script and investigation SQL files in a MySQL-compatible SQL client.
 
 ## Investigation guides
 
